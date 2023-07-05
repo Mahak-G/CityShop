@@ -97,8 +97,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
             enabled: true,
         },
         mode: "payment", 
-        success_url: "http://localhost:3000/success", 
-        cancel_url: "http://localhost:3000/cart", 
+        success_url: "https://cityshop2023.onrender.com/success", 
+        cancel_url: "https://cityshop2023.onrender.com/cart", 
   }); 
   res.send({url: session.url}); 
 });
