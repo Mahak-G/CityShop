@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 
-const URL = 'http://localhost:8000';
+const URL = 'https://cityshop-dl21.onrender.com';
 
 export const authenticateLogin = async (user) => {
     try {
