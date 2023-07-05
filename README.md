@@ -18,4 +18,4 @@ To install and run this project on your local machine, follow these steps:
 6. Start the development server: `npm start`
 ## Usage
 
-Once the server is running, you can access the application by visiting `http://localhost:3000` in your web browser. From there, you can explore the different features of the CityShop.
+Once the server is running, you can access the application by visiting `http://localhost:3000` in your web browser. From there, you can explore the different features of the CityShop or you can check live version of cityshop by visiting `https://cityshop2023.onrender.com/`.
