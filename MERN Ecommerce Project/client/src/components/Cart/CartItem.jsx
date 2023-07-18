@@ -48,13 +48,13 @@ const CartItem = ({ item, removeItemFromCart }) => {
                 
             </LeftComponent>
             <Box style={{ margin: 20 }}>
-                <Typography>{addEllipsis(item.title.longTitle)}</Typography>
+                <Typography>{addEllipsis(item.longTitle)}</Typography>
                 <SmallText>Seller:RetailNet
                 </SmallText>
                 <Typography style={{margin: '20px 0'}}>
-                    <Cost component="span">₹{item.price.cost}</Cost>&nbsp;&nbsp;&nbsp;
-                    <MRP component="span"><strike>₹{item.price.mrp}</strike></MRP>&nbsp;&nbsp;&nbsp;
-                    <Discount component="span">{item.price.discount} off</Discount>
+                    <Cost component="span">₹{item.cost}</Cost>&nbsp;&nbsp;&nbsp;
+                    <MRP component="span"><strike>₹{item.mrp}</strike></MRP>&nbsp;&nbsp;&nbsp;
+                    <Discount component="span">{item.discount} off</Discount>
                 </Typography>
                 <Remove onClick={() => removeItemFromCart(item.id)}>Remove</Remove>
             </Box>
