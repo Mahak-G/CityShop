@@ -61,11 +61,11 @@ const DetailView = () => {
                         <ActionItem product={product} />
                     </Grid>
                     <RightContainer item lg={9} md={9} sm={8} xs={12}>
-                        <Title >{product.title.longTitle}</Title>
+                        <Title >{product.longTitle}</Title>
                         <Titles>
-                            <span style={{ fontSize: 28 }}>₹{product.price.cost}</span>&nbsp;&nbsp;&nbsp; 
-                            <span style={{ color: '#878787' }}><strike>₹{product.price.mrp}</strike></span>&nbsp;&nbsp;&nbsp;
-                            <span style={{ color: '#388E3C' }}>{product.price.discount} off</span>
+                            <span style={{ fontSize: 28 }}>₹{product.cost}</span>&nbsp;&nbsp;&nbsp; 
+                            <span style={{ color: '#878787' }}><strike>₹{product.mrp}</strike></span>&nbsp;&nbsp;&nbsp;
+                            <span style={{ color: '#388E3C' }}>{product.discount} off</span>
                         </Titles>
                         <ProductDetail product={product} />
                     </RightContainer>
