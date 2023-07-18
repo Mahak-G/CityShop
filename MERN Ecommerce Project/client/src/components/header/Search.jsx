@@ -64,14 +64,14 @@ const Search = () =>{
               text && 
               <ListWrapper hidden={open}>
                 {
-                  products.filter(product => product.title.longTitle.toLowerCase().includes(text.toLowerCase())).map(product => (
+                  products.filter(product => product.longTitle.toLowerCase().includes(text.toLowerCase())).map(product => (
                     <ListItem>
                       <Link 
                         to={`/product/${product.id}`} 
                         style={{ textDecoration:'none', color:'inherit'}}
                         onClick={() => setOpen(true)}  
                       >
-                        {product.title.longTitle}
+                        {product.longTitle}
                       </Link>
                     </ListItem>
                   ))
