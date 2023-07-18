@@ -7,8 +7,9 @@ import Home from './components/home/Home';
 import DataProvider from './context/DataProvider';
 import { Box} from "@mui/material";
 import DetailView from './components/details/DetailView';
+import SellerDialog from  './components/seller/SellerDialog';
 import Cart from './components/Cart/Cart';
-
+import SuccessEntry from './components/seller/Successful';
 import SuccessPayment from './components/payment/Success';
 
 function App() {
@@ -21,8 +22,10 @@ function App() {
             <Routes>
               <Route path= '/' element={<Home />} />
               <Route path= '/cart' element={<Cart />} />
+              <Route path='/seller' element={<SellerDialog/>} />
               <Route path= '/product/:id' element={<DetailView />} />
               <Route path="/success" element={<SuccessPayment />} />
+              <Route path="/successful" element={<SuccessEntry/>}/>
             </Routes>
             
           </Box>
