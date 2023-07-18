@@ -21,3 +21,11 @@ export const authenticateSignup = async (user) => {
     }
 }
 
+export const authenticateDetails = async (user) => {
+    try {
+        return await axios.post(`${URL}/seller`, user)
+    } catch (error) {
+        console.log('Error while calling Product Entry API: ', error);
+        return error.response;
+    }
+}
