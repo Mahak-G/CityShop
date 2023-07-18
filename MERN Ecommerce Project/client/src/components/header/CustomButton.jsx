@@ -60,6 +60,9 @@ const CustomButton = () =>{
     const openDialog = () => {
         setOpen(true);
     }
+    const openSeller = () => {
+        navigate('/seller');
+    }
     const toCart = () => {
         navigate('/cart');
     }
@@ -70,8 +73,7 @@ const CustomButton = () =>{
                 account ? <Profile account={account} setAccount={setAccount} /> :
                     <LoginButton  onClick={() => openDialog()}> Login</LoginButton> 
             }
-            
-            <Typography style={{ marginTop: 3, width: 135 }}>Become a Seller</Typography>
+            <Button onClick={() => openSeller()} style={{marginRight: 10, color: 'white', background: 'black'}} variant="contained">Seller</Button>
             <Typography style={{ marginTop: 3 }}>Location</Typography>
             <Container to='/cart'>
                 <Badge badgeContent={cartItems?.length} color="secondary">
