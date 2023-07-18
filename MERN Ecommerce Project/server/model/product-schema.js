@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"; //for mongoose data save
 const productSchema = new mongoose.Schema({
     id:{
         type:String,
@@ -7,13 +7,17 @@ const productSchema = new mongoose.Schema({
     },
     url: String,
     detailUrl:String,
-    title: Object,
-    price:Object,
+    shortTitle:String,
+    longTitle:String,
+    mrp:Number,
+    cost:Number,
+    discount:String,
     quantity:Number,
     description: String,
-    discount: String,
+    discount_tag: String,
     tagline:String
 });
 
 const products= mongoose.model('product',productSchema);
 export default products;
+
