@@ -41,10 +41,10 @@ app.post("/api/create-checkout-session", async (req, res) => {
             price_data: { 
                 currency: "inr", 
                 product_data: { 
-                  name: Item.title.longTitle, 
-                  images: [Item.url],
+                  name: Item.longTitle, 
+                  images: [Item.detailUrl],
                 }, 
-                unit_amount: ((Item.price.cost)+40) * 100, 
+                unit_amount: ((Item.cost)+40) * 100, 
               }, 
               quantity: 1, 
         };
